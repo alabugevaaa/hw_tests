@@ -2,7 +2,6 @@
 import os
 import unittest
 import requests
-os.environ['API_KEY'] = 'trnsl.1.1.20200316T015730Z.a6297cc5db44322a.ae5c5f49d2e22e4a0c395fd405366b500b5bff57'
 #  документация https://yandex.ru/dev/translate/doc/dg/reference/translate-docpage/
 
 API_KEY = os.getenv('API_KEY')
