@@ -31,7 +31,7 @@ class TestApp(unittest.TestCase):
         self.assertSetEqual(result, {'Аристарх Павлов', 'Василий Гупкин', 'Геннадий Покемонов'})
 
     def test_move_doc_to_shelf(self):
-        with patch('app.input', size_effect=['10006', '2']):
+        with patch('app.input', side_effect=['10006', '2']):
             app.move_doc_to_shelf()
         with patch('app.input', return_value='10006'):
             dir = app.get_doc_shelf()
